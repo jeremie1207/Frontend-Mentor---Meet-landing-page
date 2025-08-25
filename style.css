@@ -1,0 +1,176 @@
+:root {
+    --clr-cyan-600 : hsl(192, 37%, 48%);
+    --clr-cyan-300: hsl(192, 90%, 77%);
+    --clr-purple-600: hsl(268, 34%, 53%);
+    --clr-purple-300: hsl(268, 100%, 86%);
+    --clr-stale-900: hsl(240, 21%, 20%);
+    --clr-stale-600: hsl(240, 10%, 57%);
+    --clr-stale-300: hsl(240, 18%, 85%);
+    --clr-white: hsl(0, 0%, 98%);
+
+    --ff-primary : "Red Hat Display", sans-serif;
+}
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+
+  font-family: var(--ff-primary);
+  color: var(--clr-stale-600);
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* composition */
+
+.container {
+  inline-size: 90%;
+}
+
+/* utilities */
+.center {
+  margin-inline : auto;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1rem);
+}
+
+.mg-top-3 {
+  margin-block-start: 3rem;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.text-clr-slate-900 {
+  color: var(--clr-stale-900);
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+/* block */
+
+.hero {
+  overflow-x: hidden;
+}
+
+.hero-image img{
+  margin-block : 2rem;
+  max-width: 110%;
+}
+
+.hero-text {
+  text-align: center;
+  max-inline-size: 25rem;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.title-primary {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.hero-buttons {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 48rem) {
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  color: white;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.btn-primary {
+  background-color: var(--clr-cyan-600);
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-cyan-300);
+}
+
+.btn-secondary {
+  background-color: var(--clr-purple-600);
+}
+
+.btn-secondary:hover {
+  background-color: var(--clr-purple-300);
+}
+/* exception */
