@@ -14,11 +14,20 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="flow text-center">
-  <header class="header mg-top-3">
+  <header class="header mg-top-3 grid-container place-items-center">
     <img class="logo center" src="./assets/logo.svg" alt="Meet logo">
-    <section class="hero flow">
-      <picture class="hero-image grid-container place-items-center">
+    <section class="hero flow grid-container place-items-center place-content-center">
+      <!-- <picture class="hero-image grid-container place-items-center">
+        <source media="(max-width: 770px)" srcset="./assets/tablet/image-hero.png">
         <img src="./assets/tablet/image-hero.png" alt="Hero image">
+      </picture> -->
+
+      <picture class="hero-image-left">
+        <img src="./assets/desktop/image-hero-left.png" alt="Hero image left">
+      </picture>
+
+      <picture class="hero-image-right">
+        <img src="./assets/desktop/image-hero-right.png" alt="Hero image right">
       </picture>
      <div class="hero-text flow container grid-container place-items-center center flow">
       <h1 class="hero-title title-primary fw-900 text-clr-slate-900">Group Chat <span>for Everyone</span></h1>
@@ -56,12 +65,17 @@
         <div class="line"></div>
         <p class="circle flex-container justify-content-center align-items-center fw-700">02</p>
       </div>
-      <div class="footer-text-container padding-block-2">
-        <div class="footer-text container center flex-container gap-1">
-          <h2 class="title-primary">Experience more together</h2>
-          <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-          <button class="btn btn-secondary fw-700">Download <span class="text-clr-purple-300">v1.3</span></button>
-        </div> 
+      <div class="overlay">
+        
+      </div>
+      <div class="footer-text-container">
+        <div class="footer-overlay padding-block-2">
+          <div class="footer-text container center flex-container gap-1">
+            <h2 class="title-primary">Experience more together</h2>
+            <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+            <button class="btn btn-secondary fw-700">Download <span class="text-clr-purple-300">v1.3</span></button>
+          </div> 
+        </div>
       </div> 
     </div>
   </footer>
