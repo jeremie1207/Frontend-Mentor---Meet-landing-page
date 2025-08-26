@@ -78,6 +78,7 @@ h1, h2, h3 {
 
 .container {
   inline-size: 90%;
+  max-inline-size: 76.5rem;
 }
 
 /* utilities */
@@ -94,7 +95,7 @@ h1, h2, h3 {
 }
 
 .flow > * + * {
-  margin-block-start: var(--flow-space, 1rem);
+  margin-block-start: var(--flow-space, 1.5rem);
 }
 
 .mg-top-3 {
@@ -109,8 +110,47 @@ h1, h2, h3 {
   color: var(--clr-stale-900);
 }
 
+.text-clr-cyan-600 {
+  color: var(--clr-cyan-600);
+}
+
+.text-clr-cyan-300 {
+  color: var(--clr-cyan-300);
+}
+
+.text-clr-purple-300 {
+  color: var(--clr-purple-300);
+}
+
+.padding-block-2 {
+  padding-block: 4rem;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.d-col {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900C;
 }
 /* block */
 
@@ -124,7 +164,6 @@ h1, h2, h3 {
 }
 
 .hero-text {
-  text-align: center;
   max-inline-size: 25rem;
 }
 
@@ -133,11 +172,10 @@ h1, h2, h3 {
 }
 
 .title-primary {
-  font-weight: 900;
   font-size: 2.5rem;
 }
 
-.hero-buttons {
+.hero-buttons, .footer-text {
   flex-direction: column;
   align-items: center;
 }
@@ -148,9 +186,15 @@ h1, h2, h3 {
   }
 }
 
+@media (min-width: 50rem) {
+  .footer-text {
+    flex-direction: row;
+    text-align: start;
+  }
+}
+
 .btn {
-  color: white;
-  font-weight: 700;
+  color: var(--clr-white);
   border: 1px solid transparent;
   border-radius: 2rem;
   padding: 1rem 1.5rem;
@@ -162,7 +206,7 @@ h1, h2, h3 {
   background-color: var(--clr-cyan-600);
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: var(--clr-cyan-300);
 }
 
@@ -170,7 +214,43 @@ h1, h2, h3 {
   background-color: var(--clr-purple-600);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: var(--clr-purple-300);
 }
+
+.feature-image-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+}
+
+@media (min-width: 48rem) {
+  .feature-image-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-image {
+  border-radius : 1rem;
+}
+
+
+
+.line {
+  width: 2px;
+  height: 3.5rem;
+  background-color: var(--clr-stale-300);
+}
+.circle {
+  background-color: var(--clr-white);
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 2px solid var(--clr-stale-300);
+  border-radius: 50%;
+}
+
+.timeline-2 {
+  position: relative;
+  top: 3.125rem;
+}
+
 /* exception */
