@@ -79,7 +79,7 @@ h1, h2, h3 {
 
 .container {
   inline-size: 90%;
-  max-inline-size: 76.5rem;
+  max-inline-size: 65rem;
 }
 
 .header {
@@ -276,7 +276,7 @@ h1, h2, h3 {
 
 .timeline-2 {
   position: relative;
-  top: 3rem;
+  top: 3.125rem;
 }
 
 .footer-overlay {
@@ -294,7 +294,7 @@ h1, h2, h3 {
 
 @media (min-width : 45rem) {
   .footer-text-container {
-    background-image: url('./assets/desktop/image-footer.jpg');
+    background-image: url('assets/desktop/image-footer.jpg');
   }
 }
 /* exception */
