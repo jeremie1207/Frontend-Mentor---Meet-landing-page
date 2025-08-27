@@ -1,80 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Meet landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body class="flow text-center">
-  <header class="header mg-top-3 grid-container place-items-center">
-    <img class="logo center" src="./assets/logo.svg" alt="Meet logo">
-    <section class="hero flow grid-container place-items-center place-content-center">
-      <!-- <picture class="hero-image grid-container place-items-center">
+    <title>Frontend Mentor | Meet landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="flow text-center">
+    <header class="header mg-top-3 grid-container place-items-center">
+      <img class="logo center" src="./assets/logo.svg" alt="Meet logo" />
+      <section
+        class="hero flow grid-container place-items-center place-content-center"
+      >
+        <!-- <picture class="hero-image grid-container place-items-center">
         <source media="(max-width: 770px)" srcset="./assets/tablet/image-hero.png">
         <img src="./assets/tablet/image-hero.png" alt="Hero image">
       </picture> -->
 
-      <picture class="hero-image-left">
-        <img src="./assets/desktop/image-hero-left.png" alt="Hero image left">
-      </picture>
+        <picture class="hero-image-left">
+          <img
+            src="./assets/desktop/image-hero-left.png"
+            alt="Hero image left"
+          />
+        </picture>
 
-      <picture class="hero-image-right">
-        <img src="./assets/desktop/image-hero-right.png" alt="Hero image right">
-      </picture>
-     <div class="hero-text flow container grid-container place-items-center center flow">
-      <h1 class="hero-title title-primary fw-900 text-clr-slate-900">Group Chat <span>for Everyone</span></h1>
-      <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      <div class="hero-buttons flex-container gap-1">
-        <button class="btn btn-primary fw-700">Download <span class="text-clr-cyan-300">v1.3</span></button>
-        <button class="btn btn-secondary fw-700">What is it?</button>
-      </div>
-     </div>
-    </section>
-  </header>
-  <main class="flow container center">
-    <div class="timeline flex-container d-col align-items-center">
-      <div class="line">
-      </div>
-      <p class="circle  flex-container justify-content-center align-items-center fw-700">01</p>
-    </div>
-    
-    <section class="feature-image-container grid-container">
-      <img class="feature-image" src="./assets/desktop/image-woman-in-videocall.jpg" alt="Woman in video call">
-      <img class="feature-image" src="./assets/desktop/image-women-videochatting.jpg" alt="Women video chatting">
-      <img class="feature-image" src="./assets/desktop/image-men-in-meeting.jpg" alt="Men in meeting">
-      <img class="feature-image" src="./assets/desktop/image-man-texting.jpg" alt="Man texting">
-    </section>
-    <section class="feature-text flow">
-      <h2 class="text-clr-cyan-600">Built for modern use</h2>
-      <h3 class="title-primary text-clr-slate-900">Smarter meetings, all in one place</h3>
-      <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. 
-        Control who can join with invite-only team access, data encryption, and data export.</p>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="grid-container center flow">
-      <div class="timeline-2 timeline flex-container d-col align-items-center">
-        <div class="line"></div>
-        <p class="circle flex-container justify-content-center align-items-center fw-700">02</p>
-      </div>
-      <div class="footer-text-container">
-        <div class="footer-overlay padding-block-2">
-          <div class="footer-text container center flex-container gap-1">
-            <h2 class="title-primary">Experience more together</h2>
-            <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-            <button class="btn btn-secondary fw-700">Download <span class="text-clr-purple-300">v1.3</span></button>
-          </div> 
+        <picture class="hero-image-right">
+          <img
+            src="./assets/desktop/image-hero-right.png"
+            alt="Hero image right"
+          />
+        </picture>
+        <div
+          class="hero-text flow container grid-container place-items-center center flow"
+        >
+          <h1 class="hero-title title-primary fw-900 text-clr-slate-900">
+            Group Chat <span>for Everyone</span>
+          </h1>
+          <p>
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="hero-buttons flex-container gap-1">
+            <button class="btn btn-primary fw-700">
+              Download <span class="text-clr-cyan-300">v1.3</span>
+            </button>
+            <button class="btn btn-secondary fw-700">What is it?</button>
+          </div>
         </div>
-      </div> 
-    </div>
-  </footer>
-</body>
+      </section>
+    </header>
+    <main class="flow container center">
+      <div class="timeline flex-container d-col align-items-center">
+        <div class="line"></div>
+        <p
+          class="circle flex-container justify-content-center align-items-center fw-700"
+        >
+          01
+        </p>
+      </div>
+
+      <section class="feature-image-container grid-container">
+        <img
+          class="feature-image"
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt="Woman in video call"
+        />
+        <img
+          class="feature-image"
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt="Women video chatting"
+        />
+        <img
+          class="feature-image"
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt="Men in meeting"
+        />
+        <img
+          class="feature-image"
+          src="./assets/desktop/image-man-texting.jpg"
+          alt="Man texting"
+        />
+      </section>
+      <section class="feature-text flow">
+        <h2 class="text-clr-cyan-600">Built for modern use</h2>
+        <h3 class="title-primary text-clr-slate-900">
+          Smarter meetings, all in one place
+        </h3>
+        <p>
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="grid-container center flow">
+        <div
+          class="timeline-2 timeline flex-container d-col align-items-center"
+        >
+          <div class="line"></div>
+          <p
+            class="circle flex-container justify-content-center align-items-center fw-700"
+          >
+            02
+          </p>
+        </div>
+        <div class="footer-text-container">
+          <div class="footer-overlay padding-block-2">
+            <div class="footer-text container center flex-container gap-1">
+              <h2 class="title-primary">Experience more together</h2>
+              <p>
+                Stay connected with reliable HD meetings and unlimited
+                one-on-one and group video sessions.
+              </p>
+              <button class="btn btn-secondary fw-700">
+                Download <span class="text-clr-purple-300">v1.3</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
